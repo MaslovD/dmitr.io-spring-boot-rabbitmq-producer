@@ -21,7 +21,7 @@ public class Producer {
         this.rabbitTemplate = rabbitTemplate;
     }
 
-    @Scheduled(fixedDelay = 500L)
+    @Scheduled(fixedDelay = 580L)
     public void sendMessage() {
 
 
