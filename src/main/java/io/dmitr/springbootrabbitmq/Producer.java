@@ -29,6 +29,7 @@ public class Producer {
         log.info("Sending message...");
 
         rabbitTemplate.convertAndSend(SpringBootRabbitmqProducerApplication.EXCHANGE_NAME, SpringBootRabbitmqProducerApplication.ROUTING_KEY, message);
+
         counter++;
     }
 }
